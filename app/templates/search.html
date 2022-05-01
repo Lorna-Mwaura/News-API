@@ -1,0 +1,11 @@
+{%extends 'base.html'%}
+
+{%import 'macros.html' as macro%}
+{%block content%}
+
+<div style="display: flex; flex-wrap: wrap; padding-bottom: 50px;">
+    {{macro.displayArticleList(articles)}}
+    {% for source_row in source_list |batch(4)%}
+    {% endfor %}
+</div>
+{%endblock%}
