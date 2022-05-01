@@ -17,7 +17,7 @@ def index():
 
     entertainment_sources = get_sources('entertainment')
 
-    title = "News Highlighter"
+    title = "News Hub"
 
     search_movie = request.args.get('movie_query')
 
